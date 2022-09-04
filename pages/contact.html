@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+
+    <title>Contact Me</title>
+
+    <!-- JS files -->
+    <script src="../toggle-nav.js" defer></script>
+    <script src="../form-validation.js" defer></script>
+  </head>
+  <body id="contact-page">
+    <!-- Header -->
+    <div class="container">
+      <header class="header primary-header flex">
+        <!-- Logo -->
+        <div>
+          <img class="logo" src="../images/logo.svg" alt="Site logo" />
+        </div>
+        <div>
+          <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="navigation primary-navigation navigation-indicators flex"
+            >
+              <li>
+                <a
+                  class="fs-300 uppercase text-dark letter-spacing-5"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="active uppercase fs-300 text-dark letter-spacing-5"
+                  href="./contact.html"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main content -->
+    <main>
+      <div class="container">
+        <article class="contact-page-article flex">
+          <!-- Get in Touch heading -->
+          <div>
+            <h2 class="ff-serif fs-700 bold letter-spacing-1">Get in Touch</h2>
+          </div>
+          <!-- Get in Touch content -->
+          <div>
+            <!-- Get in Touch text -->
+            <p class="ff-sans fs-500 lh-1 text-dark">
+              I’d love to hear about what you’re working on and how I could
+              help. I’m currently looking for a new role and am open to a wide
+              range of opportunities. My preference would be to find a position
+              in a company in London. But I’m also happy to hear about
+              opportunites that don’t fit that description. I’m a hard-working
+              and positive person who will always approach each task with a
+              sense of purpose and attention to detail. Please do feel free to
+              check out my online profiles below and get in touch using the
+              form.
+            </p>
+            <!-- Get in Touch Social Media -->
+            <div class="social-media-links flex" style="align-items: center">
+              <a href="https://www.github.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/github.svg"
+                  alt="Github logo"
+              /></a>
+              <a href="https://www.Twitter.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/twitter.svg"
+                  alt="Twitter logo"
+              /></a>
+              <a href="https://www.linkedin.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/linkedin.svg"
+                  alt="LinkedIn logo"
+              /></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="container">
+        <article class="contact-page-article contact-me flex">
+          <!-- Contact Me heading -->
+          <div>
+            <h2 class="ff-serif fs-700 bold letter-spacing-1">Contact Me</h2>
+          </div>
+          <!-- Contact Me content -->
+          <div>
+            <!-- Contact Me form -->
+            <form
+              action="https://formsubmit.co/s.fieldingsmith@gmail.com"
+              method="POST"
+            >
+              <!-- Name input -->
+              <div class="input-group flow" style="--flow-space: 0.7rem">
+                <label for="name" class="block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Jane Appleseed"
+                  class="text-input"
+                  id="name"
+                  required
+                />
+              </div>
+
+              <!-- Email address input -->
+              <div class="input-group flow" style="--flow-space: 0.7rem">
+                <label for="email" class="block">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  class="text-input"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <!-- Message input -->
+              <div class="input-group flow" style="--flow-space: 0.7rem">
+                <label for="message" class="block">Message</label>
+                <textarea
+                  class="text-input"
+                  placeholder="How can I help?"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://sazbot.github.io/portfolio-website/pages/thanks"
+              />
+
+              <!-- Submit button -->
+              <div>
+                <button
+                  type="submit"
+                  class="submit-btn flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+                >
+                  <div class="button-image">
+                    <img src="../images/icons/down-arrows.svg" alt="" />
+                  </div>
+                  <div><p class="button-text">Send Message</p></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <footer class="header secondary-header flex">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="../images/logo.svg" alt="Site logo" />
+          </div>
+          <div>
+            <!-- Navigation -->
+            <nav>
+              <ul
+                class="navigation secondary-navigation navigation-indicators flex"
+              >
+                <li>
+                  <a
+                    class="fs-300 uppercase letter-spacing-5"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="active uppercase fs-300 letter-spacing-5"
+                    href="./contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Social Media -->
+          <div class="social-media-links flex" style="align-items: center">
+            <a href="https://www.github.com"
+              ><img
+                class="logo"
+                src="../images/icons/github.svg"
+                alt="Github logo"
+            /></a>
+            <a href="https://www.Twitter.com"
+              ><img
+                class="logo"
+                src="../images/icons/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://www.linkedin.com"
+              ><img
+                class="logo"
+                src="../images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

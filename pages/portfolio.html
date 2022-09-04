@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+
+    <title>Portfolio</title>
+
+    <!-- JS files -->
+    <script src="../toggle-nav.js" defer></script>
+  </head>
+  <body id="portfolio-page">
+    <!-- Header -->
+    <div class="container">
+      <header class="header primary-header flex">
+        <!-- Logo -->
+        <div>
+          <img class="logo" src="../images/logo.svg" alt="Site logo" />
+        </div>
+        <div>
+          <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="navigation primary-navigation navigation-indicators flex"
+            >
+              <li>
+                <a
+                  class="fs-300 uppercase text-dark letter-spacing-5"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="active uppercase fs-300 text-dark letter-spacing-5"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="./contact.html"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main content -->
+    <main>
+      <div class="container">
+        <!-- Projects section -->
+        <section id="projects-section">
+          <!-- Project 1 -->
+          <article id="project-one" class="article-content">
+            <!-- Project 1 image -->
+            <div class="image-container">
+              <picture>
+                <source
+                  media="(min-width: 67rem)"
+                  srcset="
+                    ../images/portfolio/desktop/image-portfolio-manage.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 46rem)"
+                  srcset="
+                    ../images/portfolio/tablet/image-portfolio-manage@2x.jpg
+                  "
+                />
+
+                <img
+                  src="../images/portfolio/mobile/image-portfolio-manage.jpg"
+                  alt="Screenshot of the Manage web app homepage"
+                />
+              </picture>
+            </div>
+            <div class="article-info">
+              <!-- Project 1 heading -->
+              <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Manage
+              </h2>
+              <!-- Project 1 content -->
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                This project required me to build a fully responsive landing
+                page to the designs provided. I used HTML5, along with CSS Grid
+                and JavaScript for the areas that required interactivity, such
+                as the testimonial slider.
+              </p>
+              <!-- Project 1 button -->
+              <a href="./project.html?project=1"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  View Project
+                </button></a
+              >
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article id="project-two" class="article-content">
+            <!-- Project 2 image -->
+            <div class="image-container">
+              <picture>
+                <source
+                  media="(min-width: 67rem)"
+                  srcset="
+                    ../images/portfolio/desktop/image-portfolio-bookmark@2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 46rem)"
+                  srcset="
+                    ../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg
+                  "
+                />
+
+                <img
+                  src="../images/portfolio/mobile/image-portfolio-bookmark.jpg"
+                  alt="Screenshot of the Manage web app homepage"
+                />
+              </picture>
+            </div>
+            <div class="article-info">
+              <!-- Project 2 heading -->
+              <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Bookmark
+              </h2>
+              <!-- Project 2 content -->
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                This project required me to build a fully responsive landing
+                page to the designs provided. I used HTML5, along with CSS Grid
+                and JavaScript for the areas that required interactivity, such
+                as the features section.
+              </p>
+              <!-- Project 2 button -->
+              <a href="./project.html?project=2"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  View Project
+                </button></a
+              >
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article id="project-three" class="article-content">
+            <!-- Project 3 image -->
+            <div class="image-container">
+              <picture>
+                <source
+                  media="(min-width: 67rem)"
+                  srcset="
+                    ../images/portfolio/desktop/image-portfolio-insure@2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 46rem)"
+                  srcset="
+                    ../images/portfolio/tablet/image-portfolio-insure@2x.jpg
+                  "
+                />
+
+                <img
+                  src="../images/portfolio/mobile/image-portfolio-insure.jpg"
+                  alt="Screenshot of the Manage web app homepage"
+                />
+              </picture>
+            </div>
+            <div class="article-info">
+              <!-- Project 3 heading -->
+              <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Insure
+              </h2>
+              <!-- Project 3 content -->
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                This was a small project which mostly consisted of HTML and CSS.
+                I built a fully-responsive landing page. The only JavaScript
+                this project required was to enable the toggling of the mobile
+                navigation.
+              </p>
+              <!-- Project 3 button -->
+              <a href="./project.html?project=3"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  View Project
+                </button></a
+              >
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article id="project-four" class="article-content">
+            <!-- Project 4 image -->
+            <div class="image-container">
+              <picture>
+                <source
+                  media="(min-width: 67rem)"
+                  srcset="
+                    ../images/portfolio/desktop/image-portfolio-fylo@2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 46rem)"
+                  srcset="
+                    ../images/portfolio/tablet/image-portfolio-fylo@2x.jpg
+                  "
+                />
+
+                <img
+                  src="../images/portfolio/mobile/image-portfolio-fylo.jpg"
+                  alt="Screenshot of the Manage web app homepage"
+                />
+              </picture>
+            </div>
+            <div class="article-info">
+              <!-- Project 4 heading -->
+              <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                Fylo
+              </h2>
+              <!-- Project 4 content -->
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                This project was built in pure HTML and CSS. I had mobile and
+                desktop designs to work to and built it so that it was
+                fully-responsive. I took a mobile-first approach and used modern
+                CSS like Flexbox and Grid for layout purposes.
+              </p>
+              <!-- Project 4 button -->
+              <a href="./project.html?project=4"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  View Project
+                </button></a
+              >
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- Contact Me section -->
+    <div class="container">
+      <section id="contact-me-section" class="flex">
+        <!-- Contact Me heading -->
+        <h2 class="ff-serif fs-700 bold letter-spacing-1">
+          Interested in doing a project together?
+        </h2>
+        <!-- Contact Me button -->
+        <a href="./contact.html"
+          ><button
+            class="contact-me-heading btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+          >
+            Contact Me
+          </button></a
+        >
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <footer class="header secondary-header flex">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="../images/logo.svg" alt="Site logo" />
+          </div>
+          <div>
+            <!-- Navigation -->
+            <nav>
+              <ul
+                class="navigation secondary-navigation navigation-indicators flex"
+              >
+                <li>
+                  <a
+                    class="fs-300 uppercase letter-spacing-5"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="active uppercase fs-300 letter-spacing-5"
+                    href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="./contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Social Media -->
+          <div class="social-media-links flex" style="align-items: center">
+            <a href="https://www.github.com"
+              ><img
+                class="logo"
+                src="../images/icons/github.svg"
+                alt="Github logo"
+            /></a>
+            <a href="https://www.Twitter.com"
+              ><img
+                class="logo"
+                src="../images/icons/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://www.linkedin.com"
+              ><img
+                class="logo"
+                src="../images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

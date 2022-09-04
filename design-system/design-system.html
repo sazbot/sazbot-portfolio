@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+    <title>Design System</title>
+  </head>
+  <body>
+    <header>
+      <h1
+        class="ff-serif fs-800 bold bg-dark-grey letter-spacing-1"
+        style="color: white; padding: 3rem 6rem"
+      >
+        Design System
+      </h1>
+    </header>
+    <div class="container">
+      <!-- Colours section -->
+      <section
+        id="colours"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light" style="margin-right: 0.6rem">01</span>Colours
+        </h2>
+        <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
+          <!-- Primary -->
+          <div class="text-accent bold letter-spacing-4 uppercase">
+            <h3>Primary</h3>
+          </div>
+          <div>
+            <div
+              class="bg-accent"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Slightly Desaturated Cyan</p>
+            <p class="text-medium">HEX : #5FB4A2</p>
+            <p class="text-medium">RGB : rgb(95, 180, 162)</p>
+            <p class="text-medium">HSL : hsl(167°, 36%, 54%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-dark"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Dark Blue</p>
+            <p class="text-medium">HEX : #203A4C</p>
+            <p class="text-medium">RGB : rgb(32, 58, 76)</p>
+            <p class="text-medium">HSL : hsl(205°, 41%, 21%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-dark-grey"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Grayish Dark Blue</p>
+            <p class="text-medium">HEX : #33323D</p>
+            <p class="text-medium">RGB : rgb(51, 50, 61)</p>
+            <p class="text-medium">HSL : hsl(245°, 10%, 22%)</p>
+          </div>
+
+          <!-- Secondary -->
+          <div class="text-accent bold letter-spacing-4 uppercase">
+            <h3>Secondary</h3>
+          </div>
+          <div>
+            <div
+              class="bg-light"
+              style="
+                margin-bottom: 0.7rem;
+                border: 1px solid lightgray;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Very Light Grey</p>
+            <p class="text-medium">HEX : #FAFAFA</p>
+            <p class="text-medium">RGB : rgb(250, 250, 250)</p>
+            <p class="text-medium">HSL : hsl(0°, 0%, 98%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-medium"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Light Grey</p>
+            <p class="text-medium">HEX : #EAEAEB</p>
+            <p class="text-medium">RGB : rgb(234, 234, 235)</p>
+            <p class="text-medium">HSL : hsl(240°, 2%, 92%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-error"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p class="bold">Bright Red</p>
+            <p class="text-medium">HEX : #F43030</p>
+            <p class="text-medium">RGB : rgb(244, 48, 48)</p>
+            <p class="text-medium">HSL : hsl(0°, 90%, 57%)</p>
+          </div>
+        </div>
+      </section>
+      <!-- Typography section -->
+      <section
+        id="typography"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light" style="margin-right: 0.6rem">02</span
+          >Typography
+        </h2>
+        <div
+          class="grid"
+          style="grid-template-columns: 2fr 1fr 1fr; margin-bottom: 3rem"
+        >
+          <!-- Font-Family -->
+          <div class="text-accent bold letter-spacing-4 uppercase">
+            <h3>Font-Family</h3>
+          </div>
+          <div class="flex" style="gap: 0">
+            <div
+              class="bg-dark-grey fs-800 bold ff-serif flex"
+              style="
+                color: white;
+                aspect-ratio: 1;
+                width: 8rem;
+                border-bottom-right-radius: 35%;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Aa
+            </div>
+            <div
+              class="bg-medium flex"
+              style="
+                width: 16rem;
+                height: 8rem;
+                justify-content: center;
+                align-items: center;
+                margin-left: -2rem;
+                z-index: -1;
+              "
+            >
+              Ibarra Real Nova
+            </div>
+          </div>
+          <div class="flex" style="gap: 0">
+            <div
+              class="bg-dark-grey fs-800 bold flex"
+              style="
+                color: white;
+                aspect-ratio: 1;
+                width: 8rem;
+                border-bottom-right-radius: 35%;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Aa
+            </div>
+            <div
+              class="bg-medium flex"
+              style="
+                width: 16rem;
+                height: 8rem;
+                justify-content: center;
+                align-items: center;
+                margin-left: -2rem;
+                z-index: -1;
+              "
+            >
+              Public Sans
+            </div>
+          </div>
+        </div>
+
+        <div class="flex" style="--gap: 3rem">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 2.5rem">
+            <!-- Heading Typography -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Headings</h3>
+            </div>
+            <!-- H1 -->
+            <div>
+              <p class="text-medium" style="margin-bottom: 0.5rem">
+                <span class="bold">H1</span>, Ibarra Real Nova Bold, 50px, 50px
+                Line, -0,45 Character
+              </p>
+              <p class="ff-serif fs-800 bold letter-spacing-1">
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+            <!-- H2 -->
+            <div>
+              <p class="text-medium" style="margin-bottom: 0.5rem">
+                <span class="bold">H2</span>, Ibarra Real Nova Bold, 40px, 42px
+                Line, -0,36 Character
+              </p>
+              <p class="ff-serif fs-700 bold letter-spacing-2">
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+            <!-- H3 -->
+            <div>
+              <p class="text-medium" style="margin-bottom: 0.5rem">
+                <span class="bold">H3</span>, Ibarra Real Nova Regular, 32px,
+                36px Line, -0,29 Character
+              </p>
+              <p class="ff-serif fs-600 bold letter-spacing-3">
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+          </div>
+          <div class="flow" style="flex-basis: 100%; --flow-space: 2.5rem">
+            <!-- Body Typography -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Body</h3>
+            </div>
+            <!-- Body 1 -->
+            <div>
+              <p class="text-medium" style="margin-bottom: 0.5rem">
+                <span class="bold">Body 1</span>, Public Sans Regular, 16px,
+                30px Line
+              </p>
+              <p class="ff-sans fs-500">
+                Sed egestas, ante et vulputate volutpat, eros pede semper est,
+                vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
+                elementum hendrerit tortor. Sed semper lorem at felis.
+                Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
+              </p>
+            </div>
+            <!-- Body 2 -->
+            <div>
+              <p class="text-medium" style="margin-bottom: 0.5rem">
+                <span class="bold">Body 2</span>, Public Sans Regular, 15px,
+                30px Line
+              </p>
+              <p class="ff-sans fs-400">
+                Sed egestas, ante et vulputate volutpat, eros pede semper est,
+                vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
+                elementum hendrerit tortor. Sed semper lorem at felis.
+                Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Buttons section -->
+      <section
+        id="buttons"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light" style="margin-right: 0.6rem">03</span>Buttons
+        </h2>
+        <div class="flex" style="--gap: 3rem">
+          <div class="flow" style="flex-basis: 100%">
+            <!-- Primary Button -->
+            <div
+              class="text-accent bold letter-spacing-4 uppercase"
+              style="margin-bottom: 2rem"
+            >
+              <h3>Primary</h3>
+            </div>
+            <div>
+              <a href="#">
+                <button
+                  type="submit"
+                  class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+                >
+                  <div>
+                    <img src="../images/icons/down-arrows.svg" alt="" />
+                  </div>
+                  <div><p>About Me</p></div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="flow" style="flex-basis: 100%">
+            <!-- Secondary Button -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Secondary</h3>
+            </div>
+            <div>
+              <a href="#"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  Go to portfolio
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Forms section -->
+      <section
+        id="forms"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light" style="margin-right: 0.6rem">04</span>Forms
+        </h2>
+        <form
+          action="https://formsubmit.co/s.fieldingsmith@gmail.com"
+          method="POST"
+        >
+          <div class="flex" style="--gap: 3rem">
+            <div class="flow" style="flex-basis: 100%">
+              <!-- Text Area -->
+              <div class="text-accent bold letter-spacing-4 uppercase">
+                <h3>Text Area</h3>
+              </div>
+
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="message" class="block">Message</label>
+                <textarea
+                  class="text-input"
+                  placeholder="What is your message?"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="flow" style="flex-basis: 100%">
+              <!-- Text Field -->
+              <div class="text-accent bold letter-spacing-4 uppercase">
+                <h3>Text Field</h3>
+              </div>
+
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="name" class="block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Insert your name here..."
+                  class="text-input"
+                  id="name"
+                  required
+                />
+              </div>
+            </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://sazbot.github.io/portfolio-website/pages/thanks"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+            >
+              <div>
+                <img src="../images/icons/down-arrows.svg" alt="" />
+              </div>
+              <div><p>Submit</p></div>
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

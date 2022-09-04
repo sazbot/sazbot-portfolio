@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+
+    <!-- JS files -->
+    <script src="toggle-nav.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <header class="header primary-header flex">
+        <!-- Logo -->
+        <div>
+          <img class="logo" src="images/logo.svg" alt="Site logo" />
+        </div>
+        <div>
+          <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="navigation primary-navigation navigation-indicators flex"
+            >
+              <li>
+                <a
+                  class="active fs-300 uppercase text-dark letter-spacing-5"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="pages/portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="pages/contact.html"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Main content -->
+    <main>
+      <div class="container">
+        <!-- Hero section -->
+        <section id="hero-section" class="flex" style="flex-direction: column">
+          <!-- Hero image -->
+          <picture class="hero-image">
+            <source
+              media="(min-width: 55rem)"
+              srcset="./images/homepage/desktop/image-homepage-hero@2x.jpg"
+            />
+            <source
+              media="(min-width: 45rem)"
+              srcset="./images/homepage/tablet/image-homepage-hero@2x.jpg"
+            />
+
+            <img
+              src="./images/homepage/mobile/image-homepage-hero@2x.jpg"
+              alt="computer screen displaying a website featured in the portfolio"
+            />
+          </picture>
+
+          <div class="hero-info">
+            <!-- Hero heading -->
+            <h1 class="hero-title ff-serif fs-700 bold letter-spacing-1">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <!-- Hero button -->
+            <a href="#about-me">
+              <button
+                type="submit"
+                class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+              >
+                <div>
+                  <img
+                    src="images/icons/down-arrows.svg"
+                    alt="icon displaying three downward-pointing arrows"
+                  />
+                </div>
+                <div><p id="about-me">About Me</p></div>
+              </button>
+            </a>
+          </div>
+        </section>
+
+        <!-- About Me section -->
+        <section id="about-me-section">
+          <article class="article-content">
+            <!-- About Me image -->
+            <div class="image-container">
+              <picture>
+                <source
+                  media="(min-width: 67rem)"
+                  srcset="
+                    ./images/homepage/desktop/image-homepage-profile@2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 46rem)"
+                  srcset="./images/homepage/tablet/image-homepage-profile.jpg"
+                />
+
+                <img
+                  src="./images/homepage/mobile/image-homepage-profile.jpg"
+                  alt="professional photograph of Alex Spencer"
+                />
+              </picture>
+            </div>
+            <div class="article-info">
+              <!-- About Me heading -->
+              <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
+                About Me
+              </h2>
+              <!-- About Me content -->
+              <p class="article-text ff-sans fs-500 lh-1 text-dark">
+                I’m a junior front-end developer looking for a new role in an
+                exciting company. I focus on writing accessible HTML, using
+                modern CSS practices and writing clean JavaScript. When writing
+                JavaScript code, I mostly use React, but I can adapt to whatever
+                tools are required. I’m based in London, UK, but I’m happy
+                working remotely and have experience in remote teams. When I’m
+                not coding, you’ll find me outdoors. I love being out in nature
+                whether that’s going for a walk, run or cycling. I’d love you to
+                check out my work.
+              </p>
+              <!-- About Me button -->
+              <a href="pages/portfolio.html"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  Go to portfolio
+                </button></a
+              >
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Me section -->
+    <div class="container">
+      <section id="contact-me-section" class="flex">
+        <!-- Contact Me heading -->
+        <h2 class="ff-serif fs-700 bold letter-spacing-1">
+          Interested in doing a project together?
+        </h2>
+        <!-- Contact Me button -->
+        <a href="pages/contact.html"
+          ><button
+            class="contact-me-heading btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+          >
+            Contact Me
+          </button></a
+        >
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <footer class="header secondary-header flex">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="images/logo.svg" alt="Site logo" />
+          </div>
+          <div>
+            <!-- Navigation -->
+            <nav>
+              <ul
+                class="navigation secondary-navigation navigation-indicators flex"
+              >
+                <li>
+                  <a
+                    class="active fs-300 uppercase letter-spacing-5"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="pages/portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="pages/contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Social Media -->
+          <div class="social-media-links flex" style="align-items: center">
+            <a href="https://www.github.com"
+              ><img
+                class="logo"
+                src="images/icons/github.svg"
+                alt="Github logo"
+            /></a>
+            <a href="https://www.Twitter.com"
+              ><img
+                class="logo"
+                src="images/icons/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://www.linkedin.com"
+              ><img
+                class="logo"
+                src="images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
