@@ -694,6 +694,11 @@ html {
     align-items: center;
   }
 
+  #portfolio-page .article-content > * {
+    flex-basis: 100%;
+    flex: 1;
+  }
+
   #projects-section:first-child {
     margin-top: 5rem;
   }
