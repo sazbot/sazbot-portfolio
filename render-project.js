@@ -1,3 +1,4 @@
+// note: add data-project attribute to any new projects on project.html
 const projectList = document.querySelectorAll("[data-project]");
 const leftSliderLink = document.querySelector(".left-slider");
 const rightSliderLink = document.querySelector(".right-slider");
@@ -7,7 +8,8 @@ const rightSliderText = document.querySelector(".right-slider-title");
 const urlParams = new URLSearchParams(window.location.search);
 const projectNumber = parseInt(urlParams.get("project"));
 
-const projectNames = ["Manage", "Bookmark", "Insure", "Fylo"];
+// note: add names of any new projects to array
+const projectNames = ["Shortly", "Space", "Portfolio"];
 
 // Render project details depending on URL parameters
 renderProject(projectNumber);
