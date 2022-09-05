@@ -626,6 +626,20 @@ html {
   }
 }
 
+/* attribution area */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: hsl(var(--clr-primary-grey));
+  color: white;
+  padding-bottom: 2em;
+}
+
+.attribution a {
+  color: hsl(var(--clr-primary-cyan));
+}
+
 /* ----------------------- */
 /*  Page-specific content  */
 /* ----------------------- */
