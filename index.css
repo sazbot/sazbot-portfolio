@@ -326,6 +326,16 @@ html {
   color: white;
 }
 
+.btn:disabled {
+  color: lightgray;
+}
+
+.btn:disabled:hover {
+  cursor: auto;
+  background-color: white;
+  color: lightgray;
+}
+
 .loader {
   pointer-events: none;
   width: 25px;
