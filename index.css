@@ -661,7 +661,6 @@ html {
 /* ----------------------- */
 
 /* Homepage */
-/* Hero */
 
 .hero-info {
   background-color: hsl(0, 0%, 100%);
@@ -670,6 +669,14 @@ html {
 
 .hero-info > h1 {
   margin-block: 1.8rem;
+}
+
+.about-me-buttons > * {
+  margin-right: 1rem;
+}
+
+.about-me-buttons .btn:first-of-type {
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 42rem) {
